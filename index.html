@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>SUBVERSE — Tous tes abonnements. Un seul univers.</title>
+  <meta name="description" content="SUBVERSE réunit abonnements, monnaies virtuelles et services en ligne : gaming, streaming, musique, IA, cloud. Un seul parcours, cent univers.">
+  <meta name="theme-color" content="#06080f">
+  <meta property="og:title" content="SUBVERSE — Tous tes abonnements. Un seul univers.">
+  <meta property="og:description" content="Abonnements, monnaies virtuelles et services en ligne, réunis dans une galaxie numérique.">
+  <meta property="og:image" content="assets/img/hero.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%233f8cff'/%3E%3Cstop offset='1' stop-color='%237b61ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='white' stroke-width='2.4' stroke-dasharray='3 4'/%3E%3Ccircle cx='16' cy='16' r='2.6' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="home">
+
+  <!-- ===================== Header ===================== -->
+  <header class="hd">
+    <a class="hd-logo" href="#/" aria-label="SUBVERSE — accueil"><span class="orb" aria-hidden="true"></span>SUBVERSE</a>
+    <nav class="hd-nav" aria-label="Univers">
+      <a href="#/" data-route="">Accueil</a>
+      <a href="#/c/gaming" data-route="c/gaming">Gaming</a>
+      <a href="#/c/social" data-route="c/social">Social</a>
+      <a href="#/c/streaming" data-route="c/streaming">Streaming</a>
+      <a href="#/c/musique" data-route="c/musique">Musique</a>
+      <a href="#/c/creation" data-route="c/creation">Création</a>
+      <a href="#/c/ia" data-route="c/ia">IA</a>
+      <a href="#/c/cloud" data-route="c/cloud">Cloud</a>
+    </nav>
+    <div class="hd-act">
+      <button class="icn" data-open-search title="Rechercher (Ctrl+K)" aria-label="Rechercher">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.4-3.4"/></svg>
+      </button>
+      <a class="icn" id="hdCmp" href="#/compare" title="Comparateur" aria-label="Comparateur">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M7 3v18M17 3v18M3 8h4M3 16h4M17 8h4M17 16h4"/></svg><span class="n" style="display:none">0</span>
+      </a>
+      <a class="icn" id="hdBundle" href="#/bundle" title="Mon bundle" aria-label="Mon bundle">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg><span class="n" style="display:none">0</span>
+      </a>
+      <a class="icn" id="hdFav" href="#/favorites" title="Mes prochains abonnements" aria-label="Favoris">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-9-9a5.2 5.2 0 0 1 9-4 5.2 5.2 0 0 1 9 4c-2 4.5-9 9-9 9z"/></svg><span class="n" style="display:none">0</span>
+      </a>
+      <button class="icn burger" title="Menu" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Menu mobile -->
+  <nav id="navDrawer" class="drawer" aria-label="Menu">
+    <a href="#/" data-route="">Accueil</a>
+    <a href="#/c/gaming" data-route="c/gaming">Gaming</a>
+    <a href="#/c/social" data-route="c/social">Social</a>
+    <a href="#/c/streaming" data-route="c/streaming">Streaming</a>
+    <a href="#/c/musique" data-route="c/musique">Musique & audio</a>
+    <a href="#/c/creation" data-route="c/creation">Création & outils</a>
+    <a href="#/c/ia" data-route="c/ia">Intelligence artificielle</a>
+    <a href="#/c/cloud" data-route="c/cloud">Cloud & productivité</a>
+    <a href="#/bundle" data-route="bundle">Constructeur de bundle</a>
+    <a href="#/gift" data-route="gift">Mode cadeau</a>
+    <a href="#/budget" data-route="budget">Budget intelligent</a>
+    <a href="#/quiz" data-route="quiz">Recommandation</a>
+    <a href="#/surprise" data-route="surprise">Surprends-moi</a>
+    <a href="#/ops" data-route="ops">Console ops</a>
+  </nav>
+
+  <!-- ===================== Application ===================== -->
+  <main id="app" aria-live="polite"></main>
+
+  <!-- ===================== Pied de page ===================== -->
+  <footer class="foot">
+    <div class="wrap foot-grid">
+      <div>
+        <div class="brandline">SUBVERSE</div>
+        <p class="sig">« Tous tes abonnements. Un seul univers. »</p>
+        <p class="demo">Site concept de démonstration : prix fictifs, aucun achat réel, aucune donnée
+          transmise à un tiers. Les marques citées appartiennent à leurs détenteurs respectifs.</p>
+      </div>
+      <div>
+        <h5>Univers</h5>
+        <a href="#/c/gaming">Gaming</a>
+        <a href="#/c/social">Social</a>
+        <a href="#/c/streaming">Streaming</a>
+        <a href="#/c/musique">Musique & audio</a>
+        <a href="#/c/creation">Création & outils</a>
+        <a href="#/c/ia">Intelligence artificielle</a>
+        <a href="#/c/cloud">Cloud & productivité</a>
+      </div>
+      <div>
+        <h5>Outils</h5>
+        <a href="#/bundle">Constructeur de bundle</a>
+        <a href="#/gift">Mode cadeau</a>
+        <a href="#/compare">Comparateur</a>
+        <a href="#/budget">Budget intelligent</a>
+        <a href="#/favorites">Mes prochains abonnements</a>
+        <a href="#/quiz">Recommandation</a>
+        <a href="#/surprise">Surprends-moi</a>
+      </div>
+      <div>
+        <h5>Projet</h5>
+        <a href="#/api">Documentation API</a>
+        <a href="#/ops">Console ops (bot)</a>
+        <a href="#/contact">Contact</a>
+        <div style="margin-top:18px">
+          <button class="tgl" data-rm type="button"></button>
+        </div>
+      </div>
+    </div>
+    <div class="wrap" style="margin-top:34px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--dim);font-size:12px">
+      <span>SUBVERSE © <span id="yr">2026</span> — concept</span>
+      <span>Réponse API moyenne : 42 ms · <a href="/api/health" style="display:inline;color:inherit">/api/health</a></span>
+    </div>
+  </footer>
+
+  <!-- ===================== Dock mobile ===================== -->
+  <div id="dock" class="dock hidden" role="status"></div>
+
+  <!-- ===================== Recherche plein écran ===================== -->
+  <div id="search" class="modal" role="dialog" aria-modal="true" aria-label="Recherche">
+    <div class="scrim"></div>
+    <div class="search-inner">
+      <div class="search-bar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.4-3.4"/></svg>
+        <input id="searchInput" type="search" placeholder="Rechercher un univers, un service, un pack…" autocomplete="off">
+        <kbd>Ctrl K</kbd>
+        <button class="icn" id="searchClose" aria-label="Fermer la recherche">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </div>
+      <div class="search-body">
+        <div class="chip-row" role="tablist" aria-label="Filtres">
+          <button class="chip on" data-sc="all">Tout</button>
+          <button class="chip" data-sc="gaming">Gaming</button>
+          <button class="chip" data-sc="social">Social</button>
+          <button class="chip" data-sc="streaming">Streaming</button>
+          <button class="chip" data-sc="musique">Musique</button>
+          <button class="chip" data-sc="creation">Création</button>
+          <button class="chip" data-sc="ia">IA</button>
+          <button class="chip" data-sc="cloud">Cloud</button>
+        </div>
+        <div id="searchRes" class="search-res" data-forcmp="0"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Transition "changement de salle" -->
+  <div class="roomx" aria-hidden="true"><div class="shade"><div class="rl"><span class="hall">Changement de salle</span><b></b></div></div></div>
+
+  <div id="toasts" aria-live="polite"></div>
+
+  <script defer src="assets/data.js"></script>
+  <script defer src="assets/fx.js"></script>
+  <script defer src="assets/app.js"></script>
+</body>
+</html>

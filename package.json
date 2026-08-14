@@ -1,0 +1,21 @@
+{
+  "name": "subverse",
+  "version": "1.0.0",
+  "description": "SUBVERSE — tous tes abonnements, un seul univers (site concept)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betad77715/robloxtest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/betad77715/robloxtest/issues"
+  },
+  "homepage": "https://github.com/betad77715/robloxtest#readme"
+}
